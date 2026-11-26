@@ -36,7 +36,7 @@ Abra o `apiDePets.jmx` no JMeter 5.6.3 para ver o plano. Para rodar a carga, de 
 jmeter -n -t apiDePets.jmx -l executions/logs/logs.jtl -e -o executions/dashboards
 ```
 
-Apague a pasta `executions` antes de rodar de novo. O relatório sai em `executions/dashboards/index.html`.
+Antes de cada execução, deixe a pasta `executions` criada e vazia. O JMeter não cria essa pasta sozinho e não grava o dashboard numa pasta que já tem conteúdo. O relatório sai em `executions/dashboards/index.html`.
 
 ## Última execução
 
